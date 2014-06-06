@@ -11,7 +11,7 @@ class PostAdmin(admin.ModelAdmin):
 	# fields to search in change list
 	search_fields = ['title', 'description', 'content']
 	# enable the date drill down on change list
-	# ERROR ON DATE HIERARCHY ************
+	# ERROR ON DATE HIERARCHY ************ "pytz"
 	date_hierarchy = 'created'
 	# enable the save buttons on top in change form
 	save_on_top = True

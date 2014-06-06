@@ -1,0 +1,5 @@
+Django==1.6.5
+argparse==1.2.1
+django-writingfield==1.1.8
+pytz==2014.4
+wsgiref==0.1.2

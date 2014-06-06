@@ -1,0 +1,17 @@
+body{
+	background: white url("images/bg.gif") no-repeat;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 28px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+div.content{
+	border: 1px solid #fbfbfb;
+	background: white url("images/div.gif") no-repeat;
+	background-size: 200%;
+	max-width: 600px;
+	width: 100%;
+	padding: 2%;
+	margin: 50px auto;
+}

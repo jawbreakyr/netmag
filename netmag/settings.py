@@ -25,7 +25,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 TEMPLATE_DIRS = (
-    'lsquo;/path/to/your/netmag/netmag/templates',
+    'netmag/templates',
     )
 
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = (
 
 
     'blog',
+    # 'writingfield',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,6 +56,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'writingfield.middleware.WritingFieldMiddleware',
+    # 'django.contrib.messages.middleware.MessageMiddleware',
+
 )
 
 ROOT_URLCONF = 'netmag.urls'
@@ -92,3 +96,7 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    'netmag/static',
+    )

@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from writingfield.widgets import FullScreenTextarea
 
 
 class Post(models.Model):
@@ -9,6 +10,7 @@ class Post(models.Model):
 	content = models.TextField()
 	published = models.BooleanField(default=True)
 	created = models.DateTimeField(auto_now_add=True)
+	
 
 	class Meta:
 		ordering = ['-created']
